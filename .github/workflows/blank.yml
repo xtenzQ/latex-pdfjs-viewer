@@ -30,8 +30,14 @@ jobs:
         with:
           root_file: cv.tex
 
-      - name: Upload pdf document
-        uses: actions/upload-artifact@v2
-        with:
-          name: cv
-          path: cv.pdf
+      - name: copy to docs
+        run: |
+          mkdir -p docs
+          cp cv.pdf docs
+          
+      - name: Commit report
+        run: |
+          git config --global user.name 'Nikita Rusetskii'
+          git config --global user.email 'rusetscky@outlook.com'
+          git commit -am "push cv"
+          git push
