@@ -33,15 +33,13 @@ jobs:
           
       - name: Copy file
         run: |
-          ls -a
           mkdir -p docs
-          ls -a
           sudo mv cv.pdf docs
-          ls -a
           
       - name: Commit pdf
         run: |
           git config --global user.name 'Nikita Rusetskii'
           git config --global user.email 'rusetscky@outlook.com'
-          git commit -am "push cv"
+          git add docs
+          git commit -m "push cv"
           git push
