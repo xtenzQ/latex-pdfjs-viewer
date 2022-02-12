@@ -33,7 +33,7 @@ jobs:
           
       - name: Copy file
         run: |
-          mkdir -p docs && mv cv.pdf /docs
+          sudo mkdir -p docs && sudo mv cv.pdf /docs
           
       - name: Commit pdf
         run: |
