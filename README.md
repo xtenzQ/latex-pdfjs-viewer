@@ -6,7 +6,7 @@ Builds LaTeX doc into PDF and then publishes it on GitHub pages so we can now em
 ```
 https://<username>.github.io/<repo>/
 ```
-**[Example](https://rusetskii.dev/latex-to-pdf-gh-pages/cv.pdf)**
+**[Example](https://rusetskii.dev/cv)**
 
 ## Get Started
 
