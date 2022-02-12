@@ -9,6 +9,7 @@ on:
     branches: [ main ]
     paths:
       - 'cv.tex'
+      - '.github/workflows/blank.yml'
   pull_request:
     branches: [ main ]
     paths:
@@ -30,12 +31,11 @@ jobs:
         with:
           root_file: cv.tex
 
-      - name: copy to docs
+      - name: Copy to docs
         run: |
-          mkdir -p docs
-          cp cv.pdf docs
+          mkdir -p docs && cp cv.pdf docs
           
-      - name: Commit report
+      - name: Commit pdf
         run: |
           git config --global user.name 'Nikita Rusetskii'
           git config --global user.email 'rusetscky@outlook.com'
