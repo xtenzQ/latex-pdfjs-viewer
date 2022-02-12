@@ -32,10 +32,8 @@ jobs:
           root_file: cv.tex
           
       - name: Copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: "cv.pdf"
-          target: "docs/cv.pdf"
+        run: |
+          mkdir -p docs && mv cv.pdf /docs
           
       - name: Commit pdf
         run: |
