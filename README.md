@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/xtenzQ/cv/actions/workflows/blank.yml/badge.svg)](https://github.com/xtenzQ/cv/actions/workflows/blank.yml) [![pages-build-deployment](https://github.com/xtenzQ/cv/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/xtenzQ/cv/actions/workflows/pages/pages-build-deployment)
 
+⚠ **Please delete `CNAME` from `pdfjs` folder and `gh-pages` branch after forking!** ⚠
+
 Builds LaTeX doc into PDF and then publishes it on GitHub pages so we can now embed our PDF with the following link:
 ```
 https://<username>.github.io/<repo>/
