@@ -1,8 +1,20 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>CV - Nikita Rusetskii</title>
-  </head>
-  <body style="height: 100%; width: 100%; overflow: hidden; margin:0px; background-color: rgb(82, 86, 89);">
-    <iframe id="pdf-js-viewer" src="web/viewer.html?file=../cv.pdf" title="webviewer" frameborder="0" width="100%" height="100%"></iframe>
-  </body>
+<head>
+	<title>PDF Test</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.2/pdf.min.js"></script>
+</head>
+<body>
+	<div id="canvases"></div>
+	<script type="text/javascript" src="./script.js"></script>
+	<style type="text/css">
+		body {
+			background-color: #535759;
+		}
+		#canvases canvas {
+			margin: 20px auto;
+			display: block;
+		}
+	</style>
+</body>
 </html>
