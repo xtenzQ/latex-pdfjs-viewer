@@ -1,14 +1,12 @@
 # LaTeX-to-PDF with GitHub Pages deployment
 
-[![CI](https://github.com/xtenzQ/cv/actions/workflows/blank.yml/badge.svg)](https://github.com/xtenzQ/cv/actions/workflows/blank.yml) [![pages-build-deployment](https://github.com/xtenzQ/cv/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/xtenzQ/cv/actions/workflows/pages/pages-build-deployment)
-
-⚠ **Please delete `CNAME` from `pdfjs` folder and `gh-pages` branch after forking!** ⚠
+[![CI](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/blank.yml/badge.svg)](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/blank.yml) [![pages-build-deployment](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/pages/pages-build-deployment)
 
 Builds LaTeX doc into PDF and then publishes it on GitHub Pages so we can now embed our PDF with the following link:
 ```
 https://<username>.github.io/<repo>/
 ```
-**[Example](https://rusetskii.dev/cv)**
+**[Example](https://rusetskii.dev/latex-pdfjs-viewer/)**
 
 ## Structure
 
