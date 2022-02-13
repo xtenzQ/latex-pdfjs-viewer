@@ -8,9 +8,11 @@ https://<username>.github.io/<repo>/
 ```
 **[Example](https://rusetskii.dev/cv)**
 
-## Get Started
+## Structure
 
-0.  Set your GitHub Pages to the `/docs` directory in Settings.
-1.  Put your .tex file into the root of the directory, rename it to `cv.tex`.
-2.  Wait for the workflow to be finished.
-3.  Enjoy :)
+- `pdfjs` - contains PDF.js viewer built from sources
+- `doc.tex` - the LaTeX document to be published
+
+## Deployment
+
+Using GitHub Actions, LaTeX document is converted into PDF and deployed to GitHub Pages together with PDF.js viewer.
