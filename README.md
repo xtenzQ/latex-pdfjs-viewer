@@ -1,4 +1,4 @@
-# LaTeX-to-PDF with GitHub Pages deployment
+# LaTeX-to-PDF with GitHub Pages + PDF.js
 
 [![CI](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/blank.yml/badge.svg)](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/blank.yml) [![pages-build-deployment](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/pages/pages-build-deployment)
 
