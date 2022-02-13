@@ -9,7 +9,7 @@ on:
     branches: [ main ]
     paths:
       - 'doc.tex'
-      - 'pdfjs/'
+      - 'pdfjs/**'
       - '.github/workflows/blank.yml'
   pull_request:
     branches: [ main ]
