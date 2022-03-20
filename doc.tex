@@ -1,174 +1,50 @@
-\documentclass[10pt]{article}
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm,a4paper]{geometry}
+\pagestyle{empty}
+\title{psfrag Example}
+
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage{newtxmath}
+
 \usepackage{graphicx}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage{kotex}
-\setlist[itemize,2]{label=$\circ$,rightmargin=8mm}
-\usepackage{tikz}
-
-\usepackage[left=0.25in, right=0.3in, top=0.3in, bottom=0.05in]{geometry}
-\usepackage[hidelinks,
-            colorlinks = true,
-            linkcolor = blue,
-            urlcolor  = blue,
-            citecolor = blue,
-            anchorcolor = blue]{hyperref}
-\usepackage{titlesec}
-
-\newcommand{\ExternalLink}{%
-    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
-        \begin{scope}[x=1ex, y=1ex]
-            \clip (-0.1,-0.1) 
-                --++ (-0, 1.2) 
-                --++ (0.6, 0) 
-                --++ (0, -0.6) 
-                --++ (0.6, 0) 
-                --++ (0, -1);
-            \path[draw, 
-                line width = 0.5, 
-                rounded corners=0.5] 
-                (0,0) rectangle (1,1);
-        \end{scope}
-        \path[draw, line width = 0.5] (0.5, 0.5) 
-            -- (1, 1);
-        \path[draw, line width = 0.5] (0.6, 1) 
-            -- (1, 1) -- (1, 0.6);
-        }
-    }
+\usepackage{psfrag}
 
 \begin{document}
 
+Remember to compile your project with \LaTeX\ + dvipdfm via the Project Settings. Click on the Overleaf menu icon in the upper left, above the file list pane, and set `Compiler' to `LaTeX' to do this!
 
-% Sections formatting
-\titleformat{\section}{\vspace{-8pt}\scshape\raggedright\Large}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.6\textwidth]{example}
+\caption{Original EPS image}
 
+\vskip3em
 
-\noindent
-\Large{\textbf{Nikita Rusetskii}}\vspace{4pt}
-\\
-\large{Java Backend Developer}\vspace{4pt}
-\\
-\normalsize\href{https://rusetskii.dev/}{rusetskii.dev}\normalsize
-\hfill Irkutsk, Russia
-\\
-\href{https://github.com/xtenzQ}{github.com/xtenzQ}
-\hfill
-\href{mailto:rusetscky@outlook.com}{rusetscky@outlook.com}
-
-\paragraph{\noindent\textbf{Core Competencies}\vspace{1pt}}\mbox{}\par\nobreak\noindent
-\textit{Java, Groovy, Spring, Hibernate, Apache Solr, MySQL, Git, Docker, JIRA, Confluence, Python}
-
-\paragraph{\noindent\textbf{Languages}\vspace{1pt}}\mbox{}\par\nobreak\noindent
-\textit{Russian - native, English - advanced}
-
-
-% ---------------------------
-
-\section{Experience}
-\paragraph{}
-
-\begin{itemize}[noitemsep,topsep=0pt]
-    \item \normalsize{\textbf{KMS Lighthouse \href{https://www.kmslh.com/}{\ExternalLink}}} \normalsize{\hfill Remote 
-    \\    \textit{ Backend Developer }
-                                                                \hfill \textit{Jan 2022 - Present}}
-            \begin{itemize}[itemsep=1pt,topsep=4pt] \normalsize
-                \item {Working in an international team to bring the best user experience of knowledge access;}
-                \item {Developing and supporting the search system of the product;}
-                \item {Stack: Java, Groovy, Spring, Hibernate, Apache Solr, MySQL, Git, Docker, JIRA, Confluence.}
-            \end{itemize}
-
-    \item \normalsize{\textbf{Transneft Technology \href{http://en.tt.transneft.ru/about/history/}{\ExternalLink}}} \normalsize{\hfill Irkutsk, Russia 
-    \\    \textit{ Fullstack Developer }
-                                                                \hfill \textit{Oct 2020 - Jan 2022}}
-            \begin{itemize}[itemsep=1pt,topsep=4pt] \normalsize
-                \item {ECM systems development including backend and frontend;}
-                \item {IBM FileNet platform integration development;}
-                \item {Documentation writing;}
-                \item {Stack: Java, JavaScript, Dojo, Groovy, Spring, GWT, Git, IBM FileNet, IBM WebSphere, Confluence, JIRA.}
-            \end{itemize}
-    \item \normalsize{\textbf{ISPsystem \href{https://www.ispsystem.com/}{\ExternalLink}}} \normalsize{\hfill Irkutsk, Russia 
-    \\    \textit{ Backend Developer Intern }
-                                                                \hfill \textit{Feb 2020 - Apr 2020}}
-            \begin{itemize}[itemsep=1pt,topsep=4pt] \normalsize
-                \item {Practiced GoLang in backend development;}
-                \item {Learnt git and unit-testing;}
-                \item {Assisted in VMmanager import service development;}
-                \item {Stack: Go, Docker, Git.}
-            \end{itemize}
-        \end{itemize}
-
-% ---------------------------
-
-\section{Projects}
-\paragraph{}
-
-\begin{itemize}[noitemsep,topsep=0pt]
-    \item \normalsize{\textbf{FlowExpert AI}} \normalsize{\hfill Irkutsk, Russia 
-    \\    \textit{ Invited Machine Learning Researcher }
-                                                                \hfill \textit{Jan 2022 - Present}}
-            \begin{itemize}[itemsep=1pt,topsep=4pt] \normalsize
-                \item {Development of a self-learning semantic structuring module for drug and consumable nomenclature databases with support functions for intelligent query processing;}
-                \item {Supported by the Foundation for Assistance to Innovations (VEB.RF Group);}
-                
-            \end{itemize}
-
-        \end{itemize}
-
-% ---------------------------
-
-\section{Awards}
-\paragraph{}
-
-\begin{itemize}[itemsep=4pt,topsep=0pt]
-    \item \normalsize{\textbf{KIEE 52nd Summer Conference}} \normalsize{\hfill Pyeongchang, South Korea 
-    \\    \textit{KIEE Graduate Students' Outstanding Paper Award} \hfill \textit{Jul 2021}}
-    \item \normalsize{\textbf{JunctionX Seoul 2021 Hackathon, Satellite Image Analysis Track \href{https://github.com/xtenzQ/SmartChange}{\ExternalLink}}} \normalsize{\hfill Seoul, South Korea
-    \\    \textit{Third Place} \hfill \textit{May 2021}}
-    \item \normalsize{\textbf{IEEE Seoul Student Paper Contest 2020}} \normalsize{\hfill Seoul, South Korea
-    \\    \textit{Bronze Award} \hfill \textit{Dec 2020}}
-    \item \normalsize{\textbf{JunctionX Seoul 2020 Hackathon, Satellite Image Analysis Track \href{https://github.com/xtenzQ/SmartMonitor}{\ExternalLink}}} \normalsize{\hfill Seoul, South Korea
-    \\    \textit{Third Place} \hfill \textit{Oct 2020}}
-        \end{itemize}
-
-\pagebreak
-% ---------------------------
-
-\section{Research}
-\paragraph{}
-
-\begin{itemize}[itemsep=5pt,topsep=0pt]
-    \item \normalsize{\textbf{The Impact of the Energy Storage System Operation Strategy on Power Grid Reliability}\normalsize{\hfill Q4, Scopus}\newline\textbf{Generators on System Reliability}}\hfill \textit{Dec 2021}
-    \\    \normalsize{Beopsoo Kim, Dayoung Lee, Nikita Rusetskii, Konstantin Shusterzon, Denis Sidorov, and Insu Kim}
-    \item \normalsize{\textbf{The Optimal Allocation of Distributed Generators Considering Fault Current and Levelized}\normalsize{\hfill Q2, Scopus}\newline\textbf{Cost of Energy Using the Particle Swarm Optimization Method}}\hfill \textit{Jan 2021}
-    \\    \normalsize{Beopsoo Kim, Nikita Rusetskii, Jo Haesung, Insu Kim}
-        \end{itemize}
-
-% ---------------------------
-
-\section{Education}
-\paragraph{}
-
-\begin{itemize}[itemsep=4pt,topsep=0pt]
-    \item \normalsize{\textbf{Irkutsk National Research Technical University}} \normalsize{\hfill Irkutsk, Russia 
-    \\    \textit{ Information Science and Computer Engineering}\hfill \textit{Sep 2014 - Jun 2024}}
-            \begin{itemize}[topsep=4pt] \normalsize
-
-                \item {Got BSc (2014 - 2018), MSc (2018 - 2020), summa cum laude;}
-                \item {Currently enrolled for a PhD program (2020 - 2024) under supervision of \href{http://www.mathnet.ru/eng/person17845}{prof. Denis Sidorov} researching cyber-physical systems management of distributed microgrids using machine learning.}
-            \end{itemize}
-        \item \normalsize{\textbf{Inha University - 인하대학교}} \normalsize{\hfill Incheon, South Korea 
-    \\    \textit{ Information and Communication Engineering, Exchange Program }\hfill \textit{Sep 2019 - Dec 2019}}
-            \begin{itemize}[itemsep=1pt,topsep=4pt] \normalsize
-                \item{Participated in exchange program with one of the top Korean universities where I studied Computer Science-related courses during semester}
-                    
-            \end{itemize}
-        \end{itemize}
-
-% ---------------------------
+\psfrag{p1}{$p_1$}
+\psfrag{p2}{$p_2$}
+\psfrag{p3}{$p_3$}
+\psfrag{\\tex[B][B]\{Plot of \$\\sin(t)\$ and \$\\cos(t)\$\}}{Plot of $\sin(t)$ and $\cos(t)$}
+\psfrag{\\tex[t][t]\{\$t\$\}}{$t$}
+\psfrag{\\tex[B][B]\{\$\\sin(t)\$, \$\\cos(t)\$\}}{$\sin(t)$, $\cos(t)$}
+\psfrag{-1}{-1}
+\psfrag{-0.2}{-0.2}
+\psfrag{-0.4}{-0.4}
+\psfrag{-0.6}{-0.6}
+\psfrag{-0.8}{-0.8}
+\psfrag{0}{0}
+\psfrag{0.2}{0.2}
+\psfrag{0.4}{0.4}
+\psfrag{0.6}{0.6}
+\psfrag{0.8}{0.8}
+\psfrag{1}{1}
+\psfrag{2}{2}
+\psfrag{4}{4}
+\psfrag{6}{6}
+\psfrag{8}{8}
+\psfrag{10}{10}
+\includegraphics[width=.6\textwidth]{example}
+\caption{The same EPS image with psfrag}
+\end{figure}
 
 \end{document}
