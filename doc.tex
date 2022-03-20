@@ -1,46 +1,56 @@
-title{A Very Simple \LaTeXe{} Template}
-\author{
-        Vitaly Surazhsky \\
-                Department of Computer Science\\
-        Technion---Israel Institute of Technology\\
-        Technion City, Haifa 32000, \underline{Israel}
-            \and
-        Yossi Gil\\
-        Department of Computer Science\\
-        Technion---Israel Institute of Technology\\
-        Technion City, Haifa 32000, \underline{Israel}
-}
-\date{\today}
-
-\documentclass[12pt]{article}
-
+\documentclass[10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{kotex}
+\setlist[itemize,2]{label=$\circ$,rightmargin=8mm}
+\usepackage{tikz}
+\usepackage[left=0.25in, right=0.3in, top=0.3in, bottom=0.05in]{geometry}
+\usepackage[hidelinks,
+            colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{titlesec}
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
 \begin{document}
-\maketitle
+\section{Awards}
+\paragraph{}
+\begin{itemize}[itemsep=4pt,topsep=0pt]
+    \item \normalsize{\textbf{KIEE 52nd Summer Conference}} \normalsize{\hfill Pyeongchang, South Korea 
+    \\    \textit{KIEE Graduate Students' Outstanding Paper Award} \hfill \textit{Jul 2021}}
+    \item \normalsize{\textbf{JunctionX Seoul 2021 Hackathon, Satellite Image Analysis Track \href{https://github.com/xtenzQ/SmartChange}{\ExternalLink}}} \normalsize{\hfill Seoul, South Korea
+    \\    \textit{Third Place} \hfill \textit{May 2021}}
+    \item \normalsize{\textbf{IEEE Seoul Student Paper Contest 2020}} \normalsize{\hfill Seoul, South Korea
+    \\    \textit{Bronze Award} \hfill \textit{Dec 2020}}
+    \item \normalsize{\textbf{JunctionX Seoul 2020 Hackathon, Satellite Image Analysis Track \href{https://github.com/xtenzQ/SmartMonitor}{\ExternalLink}}} \normalsize{\hfill Seoul, South Korea
+    \\    \textit{Third Place} \hfill \textit{Oct 2020}}
+        \end{itemize}
 
-\begin{abstract}
-This is the paper's abstract \ldots
-\end{abstract}
-
-\section{Introduction}
-This is time for all good men to come to the aid of their party!
-
-\paragraph{Outline}
-The remainder of this article is organized as follows.
-Section~\ref{previous work} gives account of previous work.
-Our new and exciting results are described in Section~\ref{results}.
-Finally, Section~\ref{conclusions} gives the conclusions.
-
-\section{Previous work}\label{previous work}
-A much longer \LaTeXe{} example was written by Gil~\cite{Gil:02}.
-
-\section{Results}\label{results}
-In this section we describe the results.
-
-\section{Conclusions}\label{conclusions}
-We worked hard, and achieved very little.
-
-\bibliographystyle{abbrv}
-\bibliography{main}
-
+% ---------------------------
 \end{document}
-This is never printed
