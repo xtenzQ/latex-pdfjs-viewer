@@ -1,50 +1,46 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[margin=2cm,a4paper]{geometry}
-\pagestyle{empty}
-\title{psfrag Example}
+title{A Very Simple \LaTeXe{} Template}
+\author{
+        Vitaly Surazhsky \\
+                Department of Computer Science\\
+        Technion---Israel Institute of Technology\\
+        Technion City, Haifa 32000, \underline{Israel}
+            \and
+        Yossi Gil\\
+        Department of Computer Science\\
+        Technion---Israel Institute of Technology\\
+        Technion City, Haifa 32000, \underline{Israel}
+}
+\date{\today}
 
-\usepackage[T1]{fontenc}
-\usepackage{ebgaramond}
-\usepackage{newtxmath}
-
-\usepackage{graphicx}
-\usepackage{psfrag}
+\documentclass[12pt]{article}
 
 \begin{document}
+\maketitle
 
-Remember to compile your project with \LaTeX\ + dvipdfm via the Project Settings. Click on the Overleaf menu icon in the upper left, above the file list pane, and set `Compiler' to `LaTeX' to do this!
+\begin{abstract}
+This is the paper's abstract \ldots
+\end{abstract}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=.6\textwidth]{example}
-\caption{Original EPS image}
+\section{Introduction}
+This is time for all good men to come to the aid of their party!
 
-\vskip3em
+\paragraph{Outline}
+The remainder of this article is organized as follows.
+Section~\ref{previous work} gives account of previous work.
+Our new and exciting results are described in Section~\ref{results}.
+Finally, Section~\ref{conclusions} gives the conclusions.
 
-\psfrag{p1}{$p_1$}
-\psfrag{p2}{$p_2$}
-\psfrag{p3}{$p_3$}
-\psfrag{\\tex[B][B]\{Plot of \$\\sin(t)\$ and \$\\cos(t)\$\}}{Plot of $\sin(t)$ and $\cos(t)$}
-\psfrag{\\tex[t][t]\{\$t\$\}}{$t$}
-\psfrag{\\tex[B][B]\{\$\\sin(t)\$, \$\\cos(t)\$\}}{$\sin(t)$, $\cos(t)$}
-\psfrag{-1}{-1}
-\psfrag{-0.2}{-0.2}
-\psfrag{-0.4}{-0.4}
-\psfrag{-0.6}{-0.6}
-\psfrag{-0.8}{-0.8}
-\psfrag{0}{0}
-\psfrag{0.2}{0.2}
-\psfrag{0.4}{0.4}
-\psfrag{0.6}{0.6}
-\psfrag{0.8}{0.8}
-\psfrag{1}{1}
-\psfrag{2}{2}
-\psfrag{4}{4}
-\psfrag{6}{6}
-\psfrag{8}{8}
-\psfrag{10}{10}
-\includegraphics[width=.6\textwidth]{example}
-\caption{The same EPS image with psfrag}
-\end{figure}
+\section{Previous work}\label{previous work}
+A much longer \LaTeXe{} example was written by Gil~\cite{Gil:02}.
+
+\section{Results}\label{results}
+In this section we describe the results.
+
+\section{Conclusions}\label{conclusions}
+We worked hard, and achieved very little.
+
+\bibliographystyle{abbrv}
+\bibliography{main}
 
 \end{document}
+This is never printed
